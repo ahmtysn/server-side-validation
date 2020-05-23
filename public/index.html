@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="errorContainer">
+        <ul class="error"></ul>
+      </div>
+      <form autocomplete="off">
+        <div class="formRow">
+          <div class="label">
+            <label for="">Name</label>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="name" name="name" />
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="label">
+            <label for="">Email</label>
+          </div>
+          <div class="input">
+            <input type="email" placeholder="email" name="email" />
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="label">
+            <label for="">Phone</label>
+          </div>
+          <div class="input phone">
+            <input type="number" placeholder="123" name="phone1" />
+            <span>-</span>
+            <input type="number" placeholder="321" name="phone2" />
+            <span>-</span>
+            <input type="number" placeholder="1234" name="phone3" />
+          </div>
+        </div>
+        <div class="formRow">
+          <div class="label">
+            <label for="">Zip Code</label>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="zip code" name="zipCode" />
+          </div>
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+  <script src="js/client.js"></script>
+</html>
